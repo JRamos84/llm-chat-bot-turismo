@@ -18,7 +18,8 @@ requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
 
 [project.entry-points.llm]
-llm-main = "llm_"
+name = "llm_chat_bot_turismo"
+
 
 [project.optional-dependencies]
 test = ["pytest"]
