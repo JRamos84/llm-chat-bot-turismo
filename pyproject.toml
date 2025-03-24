@@ -1,0 +1,24 @@
+[project]
+name = "llm-"
+version = "0.1"
+description = ""
+readme = "README.md"
+authors = [{name = "José Florentino Ramos"}]
+license = {text = "Apache-2.0"}
+classifiers = [
+    "License :: OSI Approved :: Apache Software License"
+]
+requires-python = ">=3.9"
+dependencies = [
+    "llm"
+]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project.entry-points.llm]
+ = "llm_"
+
+[project.optional-dependencies]
+test = ["pytest"]
