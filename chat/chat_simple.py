@@ -21,7 +21,10 @@ st.header("Bienvenido al chat Bariloche, soy tu guía en Bariloche. ¿Qué te gu
 openai_api_key = os.getenv("OPENAI_API_KEY")
 
 # Cargar y dividir el documento PDF
-pdf_path = "../pdf/GuiaViajeBariloche.pdf"
+
+current_dir = os.getcwd()  # Obtener el directorio actual
+pdf_path = os.path.join(current_dir, 'pdf/GuiaViajeBariloche.pdf')
+
 text_splitter = RecursiveCharacterTextSplitter(chunk_size=1500, chunk_overlap=200)
 
 raw_documents = PyPDFLoader(pdf_path).load()
