@@ -1,3 +1,5 @@
 streamlit
 langchain
+langchain-community 
 python-dotenv
+faiss-cpu
