@@ -14,7 +14,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Configurar la página de Streamlit
-st.set_page_config(page_title="GlobeBotter", page_icon="🌎")
+st.set_page_config(page_title="TurisBari", page_icon="🌎")
 st.header("Bienvenido al chat Bariloche, soy tu guía en Bariloche. ¿Qué te gustaría hacer?")
 
 # Agregar la clave de API de OpenAI
