@@ -18,7 +18,7 @@ st.set_page_config(page_title="GlobeBotter", page_icon="🌎")
 st.header("Bienvenido al chat Bariloche, soy tu guía en Bariloche. ¿Qué te gustaría hacer?")
 
 # Agregar la clave de API de OpenAI
-openai_api_key = os.getenv("OPENAI_API_KEY")
+openai_api_key = os.getenv("OPENAI_API_KEY") or st.secrets["OPENAI_API_KEY"]
 
 # Cargar y dividir el documento PDF
 
